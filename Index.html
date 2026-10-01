@@ -1,19 +1,453 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Nola Edition</title>
+  <title>Nola Edition | New Orleans Culture, Worn</title>
 
+  <meta name="description"
+        content="Nola Edition. New Orleans culture, history and identity expressed through clothing.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --black: #090909;
+      --cream: #f5f0e7;
+      --gold: #b99a5b;
+      --gray: #a7a7a7;
+      --dark: #151515;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: "Inter", sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAV */
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 28px 6%;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .nav-shop {
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 5px;
+
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 120px 7% 80px;
+
+      background:
+        radial-gradient(circle at center, #24211c 0%, #111 38%, #090909 72%);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(60px, 12vw, 130px);
+      line-height: .84;
+
+      letter-spacing: -2px;
+      font-weight: 600;
+    }
+
+    .edition {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero p {
+      max-width: 580px;
+
+      margin: 34px auto;
+
+      color: #c9c5bd;
+
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-block;
+
+      background: var(--cream);
+      color: #090909;
+
+      padding: 17px 34px;
+
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      font-size: 11px;
+      font-weight: 600;
+
+      transition: .25s;
+    }
+
+    .button:hover {
+      background: var(--gold);
+    }
+
+    /* STATEMENT */
+
+    .statement {
+      padding: 110px 8%;
+
+      text-align: center;
+
+      background: var(--cream);
+      color: #111;
+    }
+
+    .statement span {
+      display: block;
+
+      color: #8b7141;
+
+      font-size: 11px;
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 24px;
+    }
+
+    .statement h2 {
+      max-width: 900px;
+
+      margin: auto;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(36px, 6vw, 70px);
+      line-height: 1.05;
+      font-weight: 600;
+    }
+
+    /* COLLECTION */
+
+    .collection {
+      padding: 110px 7%;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--gold);
+
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      font-size: 10px;
+      margin-bottom: 18px;
+    }
+
+    .collection h2 {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(44px, 7vw, 80px);
+
+      margin-bottom: 18px;
+    }
+
+    .collection p {
+      max-width: 590px;
+
+      margin: 0 auto 38px;
+
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    /* CULTURE */
+
+    .culture {
+      min-height: 520px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 100px 8%;
+
+      background:
+        linear-gradient(120deg, #0b0b0b, #201d18);
+    }
+
+    .culture-inner {
+      max-width: 720px;
+    }
+
+    .culture h2 {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(46px, 8vw, 90px);
+
+      line-height: .95;
+      margin-bottom: 28px;
+    }
+
+    .culture p {
+      color: #bbb7af;
+      line-height: 1.9;
+      max-width: 580px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 65px 7%;
+
+      border-top: 1px solid #242424;
+
+      text-align: center;
+    }
+
+    footer .logo {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 30px;
+      letter-spacing: 4px;
+
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      color: #747474;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    footer a {
+      color: var(--gold);
+    }
+
+    @media(max-width:600px) {
+
+      nav {
+        padding: 22px 5%;
+      }
+
+      .brand {
+        font-size: 21px;
+      }
+
+      .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .statement,
+      .collection,
+      .culture {
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-  <h1>Nola Edition</h1>
+<nav>
 
-  <p>New Orleans culture. Coming soon.</p>
+  <div class="brand">
+    NOLA EDITION
+  </div>
+
+  <a
+    class="nav-shop"
+    href="https://nolaedition.square.site"
+    target="_blank"
+  >
+    SHOP
+  </a>
+
+</nav>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      New Orleans · Louisiana
+    </div>
+
+    <h1>
+      NOLA<br>
+      <span class="edition">Edition</span>
+    </h1>
+
+    <p>
+      New Orleans culture, history and identity expressed through clothing.
+      Made for the people who know the city is more than a place.
+      It's part of who you are.
+    </p>
+
+    <a
+      class="button"
+      href="https://nolaedition.square.site"
+      target="_blank"
+    >
+      Shop Nola Edition
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="statement">
+
+  <span>
+    Born From The City
+  </span>
+
+  <h2>
+    Every neighborhood has a story.
+    Every street holds memories.
+    This is New Orleans, worn.
+  </h2>
+
+</section>
+
+
+<section class="collection">
+
+  <div class="section-label">
+    The Collection
+  </div>
+
+  <h2>
+    Wear Where You're From.
+  </h2>
+
+  <p>
+    Pieces inspired by the neighborhoods, streets, people and culture
+    that make New Orleans unlike anywhere else.
+  </p>
+
+  <a
+    class="button"
+    href="https://nolaedition.square.site"
+    target="_blank"
+  >
+    View The Collection
+  </a>
+
+</section>
+
+
+<section class="culture">
+
+  <div class="culture-inner">
+
+    <div class="section-label">
+      504 Culture
+    </div>
+
+    <h2>
+      More Than<br>
+      A City.
+    </h2>
+
+    <p>
+      Nola Edition represents the places that raised us,
+      the culture that shaped us and the memories that stay with us.
+
+      New Orleans isn't something that can be duplicated.
+      You either know it, or you don't.
+    </p>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="logo">
+    NOLA EDITION
+  </div>
+
+  <p>
+    NEW ORLEANS, LOUISIANA
+    &nbsp;·&nbsp;
+    <a href="https://nolaedition.square.site">
+      SHOP
+    </a>
+  </p>
+
+</footer>
 
 </body>
-
 </html>
+
