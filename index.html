@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  >
-
-  <title>Florida P Reunion | Official Reunion Shirt Collection</title>
+  <title>Florida P Reunion | Nola Edition</title>
 
   <meta
     name="description"
-    content="Florida P Reunion official shirt collection for the Florida Project community in New Orleans' 9th Ward. Two reunion designs available in black and white."
+    content="Florida P Reunion apparel for the Florida Project community in New Orleans' 9th Ward. Reunion T-shirts and women's tanks available in black and white."
   >
 
   <meta name="theme-color" content="#090806">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
@@ -32,7 +22,6 @@
   >
 
   <style>
-
     :root {
       --black: #090806;
       --black2: #11100d;
@@ -44,13 +33,9 @@
       --max: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -76,277 +61,145 @@
       margin: auto;
     }
 
-
-    /* TOP BAR */
-
     .topline {
       background: var(--cream);
       color: #111;
-
       text-align: center;
-
       padding: 11px 14px;
-
       font-size: 9px;
       font-weight: 700;
-
       letter-spacing: .2em;
-
       text-transform: uppercase;
     }
 
-
-    /* HEADER */
-
     header {
       position: sticky;
-
       top: 0;
-
       z-index: 50;
-
       background: rgba(9,8,6,.95);
-
-      border-bottom:
-        1px solid rgba(255,255,255,.07);
-
+      border-bottom: 1px solid rgba(255,255,255,.07);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
 
     .nav {
       height: 72px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 18px;
     }
 
     .nav-title {
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
+      font-family: "Cormorant Garamond", serif;
       font-size: 23px;
-
       font-weight: 700;
-
       letter-spacing: .08em;
-
       text-transform: uppercase;
-
       line-height: 1;
     }
 
     .nav-sub {
       display: block;
-
       margin-top: 4px;
-
-      font-family:
-        "Inter",
-        sans-serif;
-
+      font-family: "Inter", sans-serif;
       color: var(--gold2);
-
       font-size: 8px;
-
       letter-spacing: .22em;
-
       font-weight: 700;
     }
 
     .shop-btn {
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
-
       min-height: 44px;
-
       padding: 0 16px;
-
-      border:
-        1px solid var(--gold);
-
+      border: 1px solid var(--gold);
       font-size: 9px;
-
       font-weight: 700;
-
       letter-spacing: .2em;
-
       text-transform: uppercase;
-
       white-space: nowrap;
     }
 
-
-    /* HERO */
-
     .hero {
       position: relative;
-
       overflow: hidden;
-
       padding: 68px 0 74px;
-
       background:
-
-        radial-gradient(
-          circle at 50% 12%,
-          rgba(199,157,85,.15),
-          transparent 26%
-        ),
-
-        radial-gradient(
-          circle at 70% 75%,
-          rgba(138,93,40,.13),
-          transparent 28%
-        ),
-
-        linear-gradient(
-          180deg,
-          #080705,
-          #0b0907
-        );
-
-      border-bottom:
-        1px solid var(--line);
+        radial-gradient(circle at 50% 12%, rgba(199,157,85,.15), transparent 26%),
+        radial-gradient(circle at 70% 75%, rgba(138,93,40,.13), transparent 28%),
+        linear-gradient(180deg, #080705, #0b0907);
+      border-bottom: 1px solid var(--line);
     }
 
     .hero-inner {
       position: relative;
-
       z-index: 2;
-
       text-align: center;
     }
 
     .eyebrow,
     .section-number {
       color: var(--gold2);
-
       font-size: 9px;
-
       font-weight: 700;
-
       letter-spacing: .3em;
-
       text-transform: uppercase;
-
       margin-bottom: 18px;
     }
 
     .hero-logo {
       width: min(860px,100%);
-
-      margin:
-        0 auto 14px;
-
-      filter:
-        drop-shadow(
-          0 18px 36px
-          rgba(0,0,0,.5)
-        );
+      margin: 0 auto 14px;
+      filter: drop-shadow(0 18px 36px rgba(0,0,0,.5));
     }
 
     .hero-kicker {
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
-      font-size:
-        clamp(
-          27px,
-          4vw,
-          42px
-        );
-
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(27px, 4vw, 42px);
       line-height: 1;
-
-      margin:
-        0 auto 18px;
-
+      margin: 0 auto 18px;
       font-weight: 600;
     }
 
     .hero-copy {
       max-width: 680px;
-
-      margin:
-        0 auto 28px;
-
+      margin: 0 auto 28px;
       color: #c6beb2;
-
       line-height: 1.8;
-
       font-size: 14px;
     }
 
     .hero-actions {
       display: flex;
-
       flex-wrap: wrap;
-
       justify-content: center;
-
       gap: 12px;
     }
 
-
-    /* BUTTONS */
-
     .btn {
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
-
       min-height: 52px;
-
       padding: 0 24px;
-
       font-size: 9px;
-
       font-weight: 800;
-
       letter-spacing: .22em;
-
       text-transform: uppercase;
-
-      border:
-        1px solid transparent;
+      border: 1px solid transparent;
     }
 
     .btn-gold {
-      background:
-        linear-gradient(
-          180deg,
-          #d8b46d,
-          #b98c43
-        );
-
+      background: linear-gradient(180deg, #d8b46d, #b98c43);
       color: #0b0906;
     }
 
     .btn-outline {
-      border-color:
-        rgba(
-          255,
-          255,
-          255,
-          .28
-        );
+      border-color: rgba(255,255,255,.28);
     }
-
-
-    /* SECTIONS */
 
     .section {
       padding: 84px 0;
@@ -354,189 +207,111 @@
 
     .section-intro {
       text-align: center;
-
       margin-bottom: 36px;
     }
 
     .section h2,
     .family h2,
     .final h2 {
-
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
+      font-family: "Cormorant Garamond", serif;
       font-weight: 600;
     }
 
     .section h2 {
-      font-size:
-        clamp(
-          44px,
-          7vw,
-          76px
-        );
-
+      font-size: clamp(44px, 7vw, 76px);
       line-height: .9;
-
-      margin:
-        0 0 14px;
+      margin: 0 0 14px;
     }
 
     .section-intro p {
       max-width: 650px;
-
       margin: 0 auto;
-
       color: var(--muted);
-
       line-height: 1.75;
-
       font-size: 13px;
     }
 
-
-    /* PRODUCTS */
-
     .design-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
 
     .product {
-      border:
-        1px solid var(--line);
-
+      border: 1px solid var(--line);
       background: #0d0c0a;
-
       overflow: hidden;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold);
     }
 
     .product-media {
       background: #d9d9d9;
-
       overflow: hidden;
     }
 
     .product-media img {
       width: 100%;
-
-      aspect-ratio:
-        1.18 / 1;
-
+      aspect-ratio: 1.18 / 1;
       object-fit: cover;
     }
 
     .product-info {
       padding: 20px;
-
       display: flex;
-
       align-items: center;
-
-      justify-content:
-        space-between;
-
+      justify-content: space-between;
       gap: 18px;
     }
 
     .product-name {
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
+      font-family: "Cormorant Garamond", serif;
       font-size: 27px;
-
       line-height: 1;
-
       margin-bottom: 5px;
     }
 
     .product-color {
       color: var(--gold2);
-
       font-size: 8px;
-
       font-weight: 700;
-
       letter-spacing: .19em;
-
       text-transform: uppercase;
     }
 
     .product-link {
       font-size: 8px;
-
       font-weight: 800;
-
       letter-spacing: .18em;
-
       text-transform: uppercase;
-
-      border-bottom:
-        1px solid var(--gold);
-
+      border-bottom: 1px solid var(--gold);
       padding-bottom: 5px;
-
       white-space: nowrap;
     }
 
-
-    /* DIVIDER */
-
     .divider {
       height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--line),
-          transparent
-        );
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
     }
-
-
-    /* FAMILY FOREVER */
 
     .family {
       padding: 90px 0;
-
       background:
-
-        radial-gradient(
-          circle at 50% 50%,
-          rgba(199,157,85,.11),
-          transparent 32%
-        ),
-
+        radial-gradient(circle at 50% 50%, rgba(199,157,85,.11), transparent 32%),
         #0e0c09;
-
-      border-top:
-        1px solid var(--line);
-
-      border-bottom:
-        1px solid var(--line);
-
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
       text-align: center;
     }
 
     .family h2 {
-      font-size:
-        clamp(
-          50px,
-          8vw,
-          88px
-        );
-
+      font-size: clamp(50px, 8vw, 88px);
       line-height: .9;
-
-      margin:
-        0 0 18px;
+      margin: 0 0 18px;
     }
 
     .family h2 span {
@@ -545,45 +320,27 @@
 
     .family-copy {
       max-width: 700px;
-
-      margin:
-        0 auto 30px;
-
+      margin: 0 auto 30px;
       color: #c5bdb1;
-
       line-height: 1.8;
-
       font-size: 14px;
     }
 
     .streets {
       max-width: 820px;
-
       margin: auto;
-
       display: flex;
-
       flex-wrap: wrap;
-
       justify-content: center;
-
-      gap:
-        10px 18px;
-
+      gap: 10px 18px;
       color: var(--cream);
-
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
+      font-family: "Cormorant Garamond", serif;
       font-size: 20px;
     }
 
     .streets span:after {
       content: "•";
-
       color: var(--gold);
-
       margin-left: 18px;
     }
 
@@ -591,54 +348,31 @@
       display: none;
     }
 
-
-    /* FINAL CTA */
-
     .final {
       text-align: center;
-
-      padding:
-        92px 0 110px;
+      padding: 92px 0 110px;
     }
 
     .final h2 {
-      font-size:
-        clamp(
-          48px,
-          8vw,
-          84px
-        );
-
+      font-size: clamp(48px, 8vw, 84px);
       line-height: .9;
-
-      margin:
-        0 0 18px;
+      margin: 0 0 18px;
     }
 
     .final p {
       max-width: 590px;
-
-      margin:
-        0 auto 28px;
-
+      margin: 0 auto 28px;
       color: var(--muted);
-
       line-height: 1.8;
-
       font-size: 14px;
     }
 
     .presented {
       margin-top: 46px;
-
       color: #7f786e;
-
       font-size: 8px;
-
       font-weight: 700;
-
       letter-spacing: .22em;
-
       text-transform: uppercase;
     }
 
@@ -646,49 +380,28 @@
       color: var(--gold2);
     }
 
-
-    /* FOOTER */
-
     footer {
-      border-top:
-        1px solid
-        rgba(255,255,255,.08);
-
-      padding:
-        26px 0 92px;
-
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 26px 0 92px;
       color: #716b63;
-
       font-size: 8px;
-
       letter-spacing: .16em;
-
       text-transform: uppercase;
-
       text-align: center;
     }
-
-
-    /* MOBILE BUY BAR */
 
     .mobile-cta {
       display: none;
     }
 
-
-    /* MOBILE */
-
     @media (max-width: 760px) {
-
       .topline {
         font-size: 8px;
-
         letter-spacing: .15em;
       }
 
       .wrap {
-        width:
-          calc(100% - 28px);
+        width: calc(100% - 28px);
       }
 
       .nav {
@@ -700,8 +413,7 @@
       }
 
       .hero {
-        padding:
-          52px 0 58px;
+        padding: 52px 0 58px;
       }
 
       .hero-kicker {
@@ -710,15 +422,12 @@
 
       .hero-copy {
         font-size: 13px;
-
         line-height: 1.72;
       }
 
       .hero-actions {
         display: grid;
-
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
       .btn {
@@ -730,8 +439,7 @@
       }
 
       .design-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
       .product-info {
@@ -748,9 +456,7 @@
 
       .streets {
         font-size: 18px;
-
-        gap:
-          7px 12px;
+        gap: 7px 12px;
       }
 
       .streets span:after {
@@ -758,111 +464,53 @@
       }
 
       .final {
-        padding:
-          76px 0 110px;
+        padding: 76px 0 110px;
       }
 
       .mobile-cta {
         display: block;
-
         position: fixed;
-
         left: 0;
-
         right: 0;
-
         bottom: 0;
-
         z-index: 80;
-
-        padding:
-          10px 14px
-          calc(
-            10px +
-            env(
-              safe-area-inset-bottom
-            )
-          );
-
-        background:
-          rgba(
-            8,
-            7,
-            5,
-            .96
-          );
-
-        border-top:
-          1px solid
-          var(--line);
-
-        backdrop-filter:
-          blur(14px);
+        padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(8,7,5,.96);
+        border-top: 1px solid var(--line);
+        backdrop-filter: blur(14px);
       }
 
       .mobile-cta a {
         display: flex;
-
         min-height: 48px;
-
         align-items: center;
-
         justify-content: center;
-
-        background:
-          linear-gradient(
-            180deg,
-            #d8b46d,
-            #b98c43
-          );
-
+        background: linear-gradient(180deg, #d8b46d, #b98c43);
         color: #0b0906;
-
         font-size: 9px;
-
         font-weight: 800;
-
         letter-spacing: .22em;
-
         text-transform: uppercase;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- TOP MESSAGE -->
-
   <div class="topline">
-    Florida Project • 9th Ward • Reunion Shirt Collection • Through November 17
+    Florida Project • 9th Ward • Reunion Collection • Through November 17
   </div>
 
-
-  <!-- HEADER -->
-
   <header>
-
     <div class="wrap nav">
 
-      <a
-        href="#top"
-        class="nav-title"
-      >
-
+      <a href="#top" class="nav-title">
         Florida P Reunion
-
         <span class="nav-sub">
           9th Ward • New Orleans
         </span>
-
       </a>
-
 
       <a
         class="shop-btn"
@@ -874,23 +522,18 @@
       </a>
 
     </div>
-
   </header>
 
-
   <main id="top">
-
 
     <!-- HERO -->
 
     <section class="hero">
-
       <div class="wrap hero-inner">
 
         <div class="eyebrow">
-          Official Reunion Shirt Collection
+          Florida P Reunion Collection
         </div>
-
 
         <img
           class="hero-logo"
@@ -898,60 +541,38 @@
           alt="Florida P Reunion 9th Ward New Orleans Louisiana"
         >
 
-
         <h1 class="hero-kicker">
-          Two designs. Black or white. Front + back artwork.
+          The neighborhood. The memories. The people.
         </h1>
 
-
         <p class="hero-copy">
-
-          Created for the Florida Project reunion
-          and the families connected to the community.
-
-          Choose your design,
-          choose your color,
-          and get your reunion shirt.
-
+          Created for the Florida Project reunion and the families
+          connected to the community. Shop the reunion collection
+          in black and white.
         </p>
-
 
         <div class="hero-actions">
 
-          <a
-            class="btn btn-gold"
-            href="#design-01"
-          >
-            See Design 01
+          <a class="btn btn-gold" href="#design-01">
+            Shop T-Shirts
           </a>
 
-
-          <a
-            class="btn btn-outline"
-            href="#design-02"
-          >
-            See Design 02
+          <a class="btn btn-outline" href="#womens-tanks">
+            Shop Women's Tanks
           </a>
 
         </div>
 
       </div>
-
     </section>
 
 
     <!-- DESIGN 01 -->
 
-    <section
-      class="section"
-      id="design-01"
-    >
-
+    <section class="section" id="design-01">
       <div class="wrap">
 
-
         <div class="section-intro">
-
           <div class="section-number">
             Design 01
           </div>
@@ -961,20 +582,12 @@
           </h2>
 
           <p>
-
-            Full-color reunion artwork on the front
-            with the Florida Projects
-            “Family Forever” tribute on the back.
-
+            Full-color reunion artwork on the front with the Florida
+            Projects “Family Forever” tribute on the back.
           </p>
-
         </div>
 
-
         <div class="design-grid">
-
-
-          <!-- DESIGN 01 BLACK -->
 
           <a
             class="product"
@@ -982,41 +595,23 @@
             target="_blank"
             rel="noopener"
           >
-
             <div class="product-media">
-
               <img
                 src="design-01-black.webp"
                 alt="Florida P Reunion Design 01 black shirt front and back"
               >
-
             </div>
-
 
             <div class="product-info">
-
               <div>
-
-                <div class="product-name">
-                  Design 01
-                </div>
-
+                <div class="product-name">Design 01</div>
                 <div class="product-color">
-                  Black • Front + Back
+                  Black • $35 • Front + Back
                 </div>
-
               </div>
-
-              <div class="product-link">
-                Shop
-              </div>
-
+              <div class="product-link">Shop</div>
             </div>
-
           </a>
-
-
-          <!-- DESIGN 01 WHITE -->
 
           <a
             class="product"
@@ -1024,43 +619,26 @@
             target="_blank"
             rel="noopener"
           >
-
             <div class="product-media">
-
               <img
                 src="design-01-white.webp"
                 alt="Florida P Reunion Design 01 white shirt front and back"
               >
-
             </div>
-
 
             <div class="product-info">
-
               <div>
-
-                <div class="product-name">
-                  Design 01
-                </div>
-
+                <div class="product-name">Design 01</div>
                 <div class="product-color">
-                  White • Front + Back
+                  White • $35 • Front + Back
                 </div>
-
               </div>
-
-              <div class="product-link">
-                Shop
-              </div>
-
+              <div class="product-link">Shop</div>
             </div>
-
           </a>
 
         </div>
-
       </div>
-
     </section>
 
 
@@ -1069,16 +647,10 @@
 
     <!-- DESIGN 02 -->
 
-    <section
-      class="section"
-      id="design-02"
-    >
-
+    <section class="section" id="design-02">
       <div class="wrap">
 
-
         <div class="section-intro">
-
           <div class="section-number">
             Design 02
           </div>
@@ -1088,21 +660,12 @@
           </h2>
 
           <p>
-
-            A more archival reunion design
-            built around the neighborhood,
-            the buildings,
-            and the Florida Project history.
-
+            A more archival reunion design built around the neighborhood,
+            the buildings and the Florida Project history.
           </p>
-
         </div>
 
-
         <div class="design-grid">
-
-
-          <!-- DESIGN 02 BLACK -->
 
           <a
             class="product"
@@ -1110,41 +673,23 @@
             target="_blank"
             rel="noopener"
           >
-
             <div class="product-media">
-
               <img
                 src="design-02-black.webp"
                 alt="Florida P Reunion Design 02 black shirt front and back"
               >
-
             </div>
-
 
             <div class="product-info">
-
               <div>
-
-                <div class="product-name">
-                  Design 02
-                </div>
-
+                <div class="product-name">Design 02</div>
                 <div class="product-color">
-                  Black • Front + Back
+                  Black • $35 • Front + Back
                 </div>
-
               </div>
-
-              <div class="product-link">
-                Shop
-              </div>
-
+              <div class="product-link">Shop</div>
             </div>
-
           </a>
-
-
-          <!-- DESIGN 02 WHITE -->
 
           <a
             class="product"
@@ -1152,130 +697,184 @@
             target="_blank"
             rel="noopener"
           >
-
             <div class="product-media">
-
               <img
                 src="design-02-white.webp"
                 alt="Florida P Reunion Design 02 white shirt front and back"
               >
-
             </div>
 
+            <div class="product-info">
+              <div>
+                <div class="product-name">Design 02</div>
+                <div class="product-color">
+                  White • $35 • Front + Back
+                </div>
+              </div>
+              <div class="product-link">Shop</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="divider"></div>
+
+
+    <!-- WOMEN'S TANKS -->
+
+    <section class="section" id="womens-tanks">
+      <div class="wrap">
+
+        <div class="section-intro">
+
+          <div class="section-number">
+            Women's Collection
+          </div>
+
+          <h2>
+            Florida P Reunion Tanks
+          </h2>
+
+          <p>
+            A fitted women's reunion tank featuring Florida P artwork
+            across the front and a bold 9th Ward tribute on the back.
+            Available in black or white.
+          </p>
+
+        </div>
+
+        <div class="design-grid">
+
+          <!-- BLACK TANK -->
+
+          <a
+            class="product"
+            href="https://square.link/u/llZmA65w"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="product-media">
+              <img
+                src="77604DDC-1200-4D48-82B6-2A0E45B15218.jpeg"
+                alt="Florida P Reunion women's black tank front and back"
+              >
+            </div>
 
             <div class="product-info">
-
               <div>
-
                 <div class="product-name">
-                  Design 02
+                  Women's Reunion Tank
                 </div>
 
                 <div class="product-color">
-                  White • Front + Back
+                  Black • $30 • Front + Back
                 </div>
-
               </div>
 
               <div class="product-link">
                 Shop
               </div>
+            </div>
 
+          </a>
+
+
+          <!-- WHITE TANK -->
+
+          <a
+            class="product"
+            href="https://square.link/u/pA0YzUCc"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="product-media">
+              <img
+                src="4DE515EE-8EA8-44FC-9ABC-1543677EF691.jpeg"
+                alt="Florida P Reunion women's white tank front and back"
+              >
+            </div>
+
+            <div class="product-info">
+              <div>
+                <div class="product-name">
+                  Women's Reunion Tank
+                </div>
+
+                <div class="product-color">
+                  White • $30 • Front + Back
+                </div>
+              </div>
+
+              <div class="product-link">
+                Shop
+              </div>
             </div>
 
           </a>
 
         </div>
-
       </div>
-
     </section>
 
 
     <!-- FAMILY FOREVER -->
 
     <section class="family">
-
       <div class="wrap">
 
         <div class="section-number">
           Florida Project
         </div>
 
-
         <h2>
-          Family
-          <span>Forever.</span>
+          Family <span>Forever.</span>
         </h2>
 
-
         <p class="family-copy">
-
-          The buildings may be gone,
-          but the people, streets and memories remain.
-
-          This reunion collection honors
-          the families and community connected
-          to the Florida Projects
-          in New Orleans’ 9th Ward.
-
+          The buildings may be gone, but the people, streets and memories remain.
+          This reunion collection honors the families and community connected
+          to the Florida Projects in New Orleans' 9th Ward.
         </p>
 
-
         <div class="streets">
-
           <span>Dorgenois</span>
-
           <span>Congress</span>
-
           <span>Law</span>
-
           <span>Independence</span>
-
           <span>Florida Ave</span>
-
           <span>Gallier St.</span>
-
           <span>Alvar</span>
-
           <span>Mazant</span>
-
           <span>Bartholomew</span>
-
         </div>
 
       </div>
-
     </section>
 
 
     <!-- FINAL CTA -->
 
     <section class="final">
-
       <div class="wrap">
 
         <div class="section-number">
           Florida P Reunion • 9th Ward
         </div>
 
-
         <h2>
-          Choose Your Reunion Shirt.
+          Wear Where You Come From.
         </h2>
 
-
         <p>
-
-          Four options.
-          Two designs.
-          Black or white.
-
-          Shop the reunion collection
-          through Nola Edition.
-
+          Reunion T-shirts and women's tanks.
+          Black or white. Front-and-back artwork inspired by
+          the Florida Project community.
         </p>
-
 
         <a
           class="btn btn-gold"
@@ -1283,53 +882,35 @@
           target="_blank"
           rel="noopener"
         >
-          Shop Reunion Shirts
+          Shop The Collection
         </a>
 
-
         <div class="presented">
-
-          Presented by
-          <strong>
-            Nola Edition
-          </strong>
-
+          Presented by <strong>Nola Edition</strong>
         </div>
 
       </div>
-
     </section>
-
 
   </main>
 
 
-  <!-- FOOTER -->
-
   <footer>
-
     © 2026 Florida P Reunion
     • New Orleans, Louisiana
     • Nola Edition
-
   </footer>
 
 
-  <!-- MOBILE STICKY SHOP BUTTON -->
-
   <div class="mobile-cta">
-
     <a
       href="https://nolaedition.square.site"
       target="_blank"
       rel="noopener"
     >
-      Shop Reunion Shirts
+      Shop The Collection
     </a>
-
   </div>
 
-
 </body>
-
 </html>
